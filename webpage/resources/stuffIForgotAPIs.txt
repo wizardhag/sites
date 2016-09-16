@@ -1,0 +1,48 @@
+
+
+
+box-sizing: content-box|border-box|initial|inherit;
+
+-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;unselectable="on";
+
+&raquo; gives you double arrow things (kind of like >>, but as a good-looking symbol)
+&#060; and &#062; give you < and >, &#038; gives you &.
+
+__longer________________________________
+
+from w3 schools:
+<textarea autocomplete="off" class="code_input" id="textareaCode" wrap="logical" spellcheck="false"><!DOCTYPE html>
+<html>
+<body>
+
+box-sizing:border-box;
+font-weight: normal|bold|bolder|lighter|number|initial|inherit;/*normal:400, bold:700; numbers must be multiples of 100 on 100<=num<=900*/
+::-webkit-scrollbar				{ /* 1 */ }/*see below pic for more info*/
+::-webkit-scrollbar-button		{ /* 2 */ }
+::-webkit-scrollbar-track		{ /* 3 */ }
+::-webkit-scrollbar-track-piece	{ /* 4 */ }
+::-webkit-scrollbar-thumb		{ /* 5 */ }
+::-webkit-scrollbar-corner		{ /* 6 */ }
+::-webkit-resizer				{ /* 7 */ }
+
+to make submitting forms not refresh the page in their onclick function, add:
+$('#form').on('submit', function(e) {
+	e.preventDefault();
+});
+document.getElementById('search_bar_input').focus();
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+ 
+</body>
+</html>
+</textarea>

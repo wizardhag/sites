@@ -1,0 +1,38 @@
+* = before publishing
+
+in header:
+-*add buttons for header, change js to rewrite them
+- make set widths for header instead of percentages
+- close search bar when clicked elsewhere
+-*update all headers
+-?closeable header?
+
+other pages: 
+- update color pages
+
+other:
+- add no-js page
+- fix terminal
+- color scheme
+- custom alerts from top/bottom of page
+- message banner across bottom of site
+- meta and linked head content
+
+
+body style guide:
+- If possible with whatever content is chosen, use full screen width:
+	> Remove body_div
+	> If it fits with site use, add menu on the left (unlikely)
+		* Must be dynamic - has a set width on computers, disappears for tablets/phones
+		* Possibly collapsable, and possibly not in full screen but uncollapseable for tablets/phones
+	> Use sections that are full width to divide up content
+		* Sections should be modular, so you can list any combination in any order easily
+		* Have an overall section class have several other classes to determine what type of section it is
+		* Most sections will need to be dynamic to change style depending on the device as talked about below
+		* All pages will have a footer section
+- Sites need different looks depending on the device:
+	> Computers: Spread out, several things going on can be good, not too simple looking
+	> Tablets: Big blocks/pictures/icons; can be full-width pictues as headers or attention-grabbers, in-text or full-width for illustrations, and 2- to 4-column layouts as menus or lists
+	> Phones: Vertical text lists, all pictures are full-width or in 2-column layouts
+
+

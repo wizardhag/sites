@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Encryption Solutions</title>
+	<script src="primeRoots.js"></script>
+	<style>
+		.encryptBox{
+			border:3px solid black;
+			padding:2px;
+			border-radius:10px;
+		}
+		#submitButton{
+			position:relative;
+			float:left;
+			width:10%;
+			height:400px;
+		}
+	</style>
+</head>
+<body>
+	<p>Oh my god I'm an idiot. These will probably solve all of our problems:</p>
+	<ul>
+		<li>1. The number we've been using as a modulus, 223, isn't even prime. Use 257 instead.</li>
+		<li>2. I don't know why I didn't originally use 257 anyways. We can use it for 256 values, which includes all ASCII values, if we include null (which has a value of 0)</li>
+		<li>3. Use +-1 instead of 32 to get all values including null</li>
+		<li>4. There's a list of primitive roots of 257 below. Choose one as the generator.</li>
+		<li>5. Multiply instead of add and subtract! Do it so that: exp1 + exp2 = k-1.<br>
+		&emsp;E.g. to encrypt do (#*(g^(k-x)))%m and for decrypt do (#*(g^(k-(k-x))))%m
+		</li>
+	</ul>
+	
+	Okay, that's not all the problems. When we encrypt something and it comes out to be something weird at the lower end of the ascii chart we might not get a good output even if the program works because things like backspace could screw it up.
+	
+	<center>
+	<form name="myForm" action="roots(this.form)" method="get">
+		<div id="encryptionTestingDiv" style="border:3px solid black;padding:2px;border-radius:15px;width:1000px;">
+			<header><h2>Encryption Tester</h2></header>
+			<div class="encryptBox" style="width:99%">
+				
+				<section id="submitButton" class="encryptBox" onClick="roots(this.form)">
+					<center style="position:relative;top:180px;">
+						<input type="button" name="buttonr" value="Submit" onClick="roots(this.form)">
+					</center>
+				</section>
+				<section class="encryptBox" style="position:relative;left:5.6%;width:87.7%;height:400px;">
+					<input type="text" name="inputbox" placeholder="Enter a Prime Number"><br>
+					<p>
+					<textarea rows="20" cols="80" name="resultbox" readonly>
+					</textarea>
+					</p>
+				</section>
+			</div>
+		</div>
+	</form>
+		
+		
+		<br><br><h1>Here is some useful stuff:</h1><br>
+		
+		<b><font size=+2>Primitive Roots Calculator</font></b>
+		<p>The first <a href="http://primes.utm.edu/lists/small/10000.txt" target="_blank">10,000 primes</a>, if you need some inspiration.</p>
+		<form name="myForm" action="roots(this.form)" method="get">
+			<input type="text" name="inputbox" placeholder="Enter a Prime Number"><br>
+			<input type="button" name="buttonr" value="Submit" onClick="roots(this.form)">
+			<p>
+			<textarea rows="20" cols="80" name="resultbox" readonly>
+			</textarea>
+			</p>
+		</form>
+		<br>
+		
+		<img src="primeNumbers.png"><br>
+		<img src="223PrimeRoots.png"><br>
+		<img src="257PrimeRoots.png"><br>
+	</center>
+</body>
+</html>
