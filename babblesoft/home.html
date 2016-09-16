@@ -1,0 +1,189 @@
+<!--DOCTYPE html-->
+<html lang="en-US">
+<head>
+	<title id="title">BabbleSoft Home</title>
+	<!link rel="icon" href="images/snakeIcon.png">
+	<link rel="icon" href="images/snakeHead.png">
+
+	<link rel="stylesheet" type="text/css" href="styles/headerStyles.css">
+	<link rel="stylesheet" type="text/css" href="styles/bodyStyles.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/terminalStyles.css">
+
+	<script src="scripts/headerScript.js"></script>
+	<script src="scripts/jquery-1.12.2.min.js"></script>
+	<!---->
+	<script src="scripts/terminalScript.js"></script>
+	<!---->
+	<script src="scripts/goodScript.js"></script>
+	
+	<script>
+		<!--
+		function onload()
+		{
+			//showWindow(0,1);
+			showWindow2(0,1);
+			randAd();
+		}
+		//var myVar = setInterval(myTimer, 10000);
+
+		function myTimer() {
+			//shiftWindow(0);
+		}
+		function stopTimer(){
+			clearInterval(myVar);
+		}
+		//-->
+	</script>
+
+	<style>
+.babbleClass{
+	font-family:neuropol;
+	color:#55bb55;
+	font-size:55px;
+	padding:none;
+	letter-spacing:.04em;
+}
+h2{
+	font-size:45px;
+	padding:none;
+	letter-spacing:.04px;
+}
+h4{
+	size:1;
+	text-align:justify;
+}
+.paragraph{
+	font-size:15px;
+	line-height:1.5;
+}
+	</style>
+</head>
+    
+<body onload="onload()" onscroll="doTheHeaderScrollThing()" onresize="doTheHeaderResizeThing()">
+
+
+<!--------------------------------------------------------------------------------------Header starts here-->
+<div id="header">
+
+<form id="h0_main"><!Dynamic-scrolling part of header>
+
+<input type="submit" onclick="searchBarSubmit();" style="display:none;">
+<div id="h0_grayBar"></div>
+<input id="h0_menu_checkbox" type="checkbox" onclick="menuClicked();">
+<div id="h0_width"><!Holds header pic and header array>
+	<div id="h0_splash_div" class="babbleClass" style="">BabbleSoft</div>
+	<img id="h0_splash_pic" src="images/doubleslashyellow4.png">
+	
+	<a id="h0_pic_link" class="h0b_colors" href="home.html" title="Home">
+		<img id="h0_pic" src="images/BoaLogo-55bb55.png">
+	</a>
+	<div id="h0_array">
+		<input id="h0_sb_checkbox" type="checkbox" onclick="searchbarClicked();">
+		<div id="h0_sb_div">
+			<input id="h0_sb_input" class="h0_font" type="text" name="searchBox" placeholder="Search Here" autocomplete="off">
+			<label id="h0_sb_button_div" class="h0b_colors" onclick="changeSearchbarFocus();" for="h0_sb_checkbox">
+				<img id="h0_sb_button_img" src="images/searchMagnifyingGlassYellow.png">
+			</label>
+		</div>
+		
+		<label id="hb_menu" class="h0_button h0b_colors h0_right" href="javascript:changeHeaderMenu();" title="Menu" for="h0_menu_checkbox">&#9776;</label>
+		<a id="hb1" class="h0_button h0b_colors h0_left" href="aboutPage.html" title="About">About</a>
+		<a id="hb2" class="h0_button h0b_colors h0_left" href="productsPage.html" title="Products">Products</a>
+		<a id="hb3" class="h0_button h0b_colors h0_left" href="../index.html" title="Index">Index</a>
+		<a id="hb4" class="h0_button h0b_colors h0_left" href="../babblesoft-classic/home.html" title="BabbleSoft Home">Green&nbsp;Colors</a>
+		<a id="hb5" class="h0_button h0b_colors h0_left" href="colorPage3.html" title="Color 2">Color&nbsp;2</a>
+		<a id="hb6" class="h0_button h0b_colors h0_left" href="bookmarksPage.html" title="Bookmarks">Bookmarks</a>
+		<a id="hb7" class="h0_button h0b_colors h0_left" href="musicPage.html" title="Music">Music</a>
+		<a id="hb8" class="h0_button h0b_colors h0_left" href="dicePage.html" title="Dice">Dice</a>
+		<a id="hb9" class="h0_button h0b_colors h0_left" href="encryptionPage.html" title="Encryption">Encryption</a>
+		<a id="hb10" class="h0_button h0b_colors h0_left" href="notepadPage.html" title="Notepad">Notepad</a>
+	</div><!/h0_array>
+</div><!/h0_width>
+
+<div id="h0_menu">
+	<div id="h0_mcol0" class="h0_menu_col">
+		<a id="mhb0" class="h0_button h0b_menu" href="illuminatiSite.html" title="Home">Home</a>
+		<a id="mhb1" class="h0_button h0b_menu" href="aboutPage.html" title="About My Site">About</a>
+		<a id="mhb2" class="h0_button h0b_menu" href="productsPage.html" title="Products">Products</a>
+	</div><div id="h0_mcol1" class="h0_menu_col">
+		<a id="mhb3" class="h0_button h0b_menu" href="dicePage.html" title="Dice">Dice</a>
+		<a id="mhb4" class="h0_button h0b_menu" href="encryptionTestingPage.html" title="Encryption Testing">Encryption</a>
+		<a id="mhb5" class="h0_button h0b_menu" href="notepadPage.html" title="Notepad">Notepad</a>
+	</div><div id="h0_mcol2" class="h0_menu_col">
+		<a id="mhb6" class="h0_button h0b_menu" href="../index.html" title="Index">Index</a>
+		<a id="mhb7" class="h0_button h0b_menu" href="../babblesoft-classic/home.html" title="BabbleSoft Home">Green&nbsp;Colors</a>
+		<a id="mhb8" class="h0_button h0b_menu" href="colorPage3.html" title="3 Color Testing">Color&nbsp;3</a>
+	</div><div id="h0_mcol3" class="h0_menu_col">
+		<a id="mhb9" class="h0_button h0b_menu" href="bookmarksPage.html" title="Bookmarks">Bookmarks</a>
+		<a id="mhb10" class="h0_button h0b_menu" href="musicPage.html" title="Music">My Music</a>
+	</div>
+</div><!/h0_menu>
+</form><!/h0_main>
+
+</div><!/header>
+<!----------------------------------------------------------------------------------------Header ends here-->
+
+<!---- ><iframe src="terminal.html" id="terminal_window"></iframe><!---->
+<div id="terminal_window" style="display:none;">
+	<form id="terminal">
+		<div id="terminal_spacer" onclick="giveTerminalFocus();"></div>
+		<span id="terminal_text">> <input id="terminal_input" type="text" autocomplete="off" style="display:inline;"></span>
+		<input type="submit" onclick="processInput();" style="display:none">
+	</form>
+</div>
+
+
+<form class="full-section empty_div slideNews2Box">
+	<!center><div class="slideNews2_dots">
+		<a class="slideNews2_dot" href="javascript:showWindow2(0,1);"></a>
+		<a class="slideNews2_dot" href="javascript:showWindow2(0,2);"></a>
+		<a class="slideNews2_dot" href="javascript:showWindow2(0,3);"></a>
+	</div><!/center-->
+	<div class="slideNews2_slider" style="left:0%;">
+		<a class="slideNews2_item1" href="javascript:void(0);">
+			<img class="slideNews2_pic" src="images/scape2.jpg">
+			<div class="slideNews2_title babbleFont backgroundFade">This is the first article</div>
+		</a><div class="slideNews2_innerSlider">
+			<a class="slideNews2_item" href="articleTemplate.html">
+				<img class="slideNews2_pic" src="images/scape1.jpg">
+				<div class="slideNews2_title babbleFont backgroundFade">Article Template</div>
+			</a><a class="slideNews2_item" href="javascript:void(0);">
+				<img class="slideNews2_pic" src="images/scape3.jpg">
+				<div class="slideNews2_title babbleFont backgroundFade">This is the third article</div>
+			</a>
+		</div>
+	</div>
+</form><!/empty_div>
+
+
+<!---->
+<div id="body_div" class="mid-section" style="margin:000px auto 0;">
+
+	<h2 id="title" class="font1">Technology Solutions for the Modern World</h2>
+
+<p class="paragraph font1">Most people don't realize how dangerous the illuminati are. The illuminati are puppetmasters controlling our governments and our economies; they've infiltrated and now control almost every aspect of civilian life, and their main goal: <i>WORLD DOMINATION</i>, and ultimately <i>CREATING A NEW WORLD ORDER</i>.</p>
+
+	<center><img src="images/youAreBeingWatched.jpg" style="width:300px;height:175px"></center><br><br>
+
+<p class="paragraph font1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<center><img src="images/youAreBeingWatched.jpg" style="width:300px;height:175px"></center><br>
+
+<p class="paragraph font1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+</div><!/body_div><!---->
+
+
+<div id="footer" class="mid-section">
+<center>
+<a href="home.html" style="color:#666666">Desktop Site</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.cnn.com/about" style="color:#666666">About BabbleSoft</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" style="color:#666666">AdChoices</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.cnn.com/services/advertise/main.html" style="color:#666666">Advertise with us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" style="color:#666666">Careers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" style="color:#666666">Contact BabbleSoft</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.huffingtonpost.com/p/frequently-asked-question.html" style="color:#666666">FAQ</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" style="color:#666666">Help</a><br><br>
+
+By using this site, you agree to have read and accepted our <a href="javascript:void(0);" style="color:#666666">Terms of Use</a>, <a href="javascript:void(0);" style="color:#666666">Cookie Policy</a> and <a href="javascript:void(0);" style="color:#666666">Privacy Policy</a>.<br>
+
+Copyright 1999-2016 by BabbleSoft Inc. All Rights Reserved.
+</center>
+</div><!---->
+</body>
+</html>
+

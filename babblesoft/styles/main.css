@@ -1,0 +1,65 @@
+.font1{
+	/**/font-family:Vardana, Geneva, sans-serif;/**/
+	/** /font-family:Arial, Helvetica, sans-serif;/**/
+	letter-spacing:.05em;
+}
+.babbleFont{
+	font-family:neuropol;
+}
+@font-face {
+    font-family: neuropol;
+    src: url(../resources/neuropol_x_rg.ttf);
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.backgroundFade{
+	background: rgba(34,34,34,1); /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, rgba(34,34,34,1) , rgba(34,34,34,.01)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, rgba(34,34,34,1), rgba(34,34,34,.01)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, rgba(34,34,34,1), rgba(34,34,34,.01)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, rgba(34,34,34,1) , rgba(34,34,34,.01)); /* Standard syntax */
+}
+
+chevron{
+    position:relative;top:0px;
+    display:inline-block;
+    height:1em;
+	width:.52em;
+	background:none;
+	overflow:hidden;
+}
+chevron:before, chevron:after{
+    position:absolute;
+    display:block;
+	left:.01em;
+    content:"";
+    border-style:solid;
+	border-width:.28em .28em;
+}
+chevron[class|=down]:after, chevron.pair:after, chevron:after{
+	border-color:black transparent transparent;
+}
+chevron[class|=up]:before, chevron.pair:before{
+	border-color:transparent transparent black;
+}
+chevron[class|=down]:before, chevron[class|=up]:after, chevron:before{
+	border-color:transparent;
+}
+chevron.up-fit:before, chevron.pair:before{
+    bottom:.38em;
+}
+chevron.down-fit:after, chevron.pair:after{
+    top:.68em;
+}
+chevron.up-lvl:before{
+    bottom:.2em;
+}
+chevron.down-lvl:after, chevron:after{
+    top:.55em;
+}
+
+

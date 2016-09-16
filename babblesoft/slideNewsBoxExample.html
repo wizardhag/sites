@@ -1,0 +1,203 @@
+<!--DOCTYPE html-->
+<html lang="en-US">
+<head>
+	<title id="title">BabbleSoft Home</title>
+	<!link rel="icon" href="images/snakeIcon.png">
+	<link rel="icon" href="images/snakeHead.png">
+
+	<link rel="stylesheet" type="text/css" href="styles/headerStyles.css">
+	<link rel="stylesheet" type="text/css" href="styles/bodyStyles.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/terminalStyles.css">
+
+	<script src="scripts/headerScript.js"></script>
+	<script src="scripts/jquery-1.12.2.min.js"></script>
+	<!---->
+	<script src="scripts/terminalScript.js"></script>
+	<!---->
+	<script src="scripts/goodScript.js"></script>
+	
+	<script>
+		<!--
+		function onload()
+		{
+			showWindow(0,1);
+			randAd();
+		}
+		var myVar = setInterval(myTimer, 10000);
+
+		function myTimer() {
+			shiftWindow(0);
+		}
+		function stopTimer(){
+			clearInterval(myVar);
+		}
+		//-->
+	</script>
+
+	<style>
+.babbleClass{
+	font-family:neuropol;
+	color:#55bb55;
+	font-size:55px;
+	padding:none;
+	letter-spacing:.04em;
+}
+h2{
+	font-size:45px;
+	padding:none;
+	letter-spacing:.04px;
+}
+h4{
+	size:1;
+	text-align:justify;
+}
+.paragraph{
+	font-size:15px;
+	line-height:1.5;
+}
+	</style>
+</head>
+    
+<body onload="onload()" onscroll="doTheHeaderScrollThing()" onresize="doTheHeaderResizeThing()">
+
+
+<!--------------------------------------------------------------------------------------Header starts here-->
+<div id="header">
+
+<form id="h0_main"><!Dynamic-scrolling part of header>
+
+<input type="submit" onclick="searchBarSubmit();" style="display:none;">
+<div id="h0_grayBar"></div>
+<input id="h0_menu_checkbox" type="checkbox" onclick="menuClicked();">
+<div id="h0_width"><!Holds header pic and header array>
+	<div id="h0_splash_div" class="babbleClass" style="">BabbleSoft</div>
+	<img id="h0_splash_pic" src="images/doubleslashyellow3.png">
+	
+	<a id="h0_pic_link" class="h0b_colors" href="home.html" title="Home">
+		<img id="h0_pic" src="images/BoaLogo-55bb55.png">
+	</a>
+	<div id="h0_array">
+		<input id="h0_sb_checkbox" type="checkbox" onclick="searchbarClicked();">
+		<div id="h0_sb_div">
+			<input id="h0_sb_input" class="h0_font" type="text" name="searchBox" placeholder="Search Here" autocomplete="off">
+			<label id="h0_sb_button_div" class="h0b_colors" onclick="changeSearchbarFocus();" for="h0_sb_checkbox">
+				<img id="h0_sb_button_img" src="images/searchMagnifyingGlassYellow.png">
+			</label>
+		</div>
+		
+		<label id="hb_menu" class="h0_button h0b_colors h0_right" href="javascript:changeHeaderMenu();" title="Menu" for="h0_menu_checkbox">&#9776;</label>
+		<a id="hb1" class="h0_button h0b_colors h0_left" href="aboutPage.html" title="About">About</a>
+		<a id="hb2" class="h0_button h0b_colors h0_left" href="productsPage.html" title="Products">Products</a>
+		<a id="hb3" class="h0_button h0b_colors h0_left" href="colorPage1.html" title="Purple">Purple</a>
+		<a id="hb4" class="h0_button h0b_colors h0_left" href="colorPage2.html" title="Color 1">Color&nbsp;1</a>
+		<a id="hb5" class="h0_button h0b_colors h0_left" href="colorPage3.html" title="Color 2">Color&nbsp;2</a>
+		<a id="hb6" class="h0_button h0b_colors h0_left" href="bookmarksPage.html" title="Bookmarks">Bookmarks</a>
+		<a id="hb7" class="h0_button h0b_colors h0_left" href="musicPage.html" title="Music">Music</a>
+		<a id="hb8" class="h0_button h0b_colors h0_left" href="dicePage.html" title="Dice">Dice</a>
+		<a id="hb9" class="h0_button h0b_colors h0_left" href="encryptionPage.html" title="Encryption">Encryption</a>
+		<a id="hb10" class="h0_button h0b_colors h0_left" href="notepadPage.html" title="Notepad">Notepad</a>
+	</div><!/h0_array>
+</div><!/h0_width>
+
+<div id="h0_menu">
+	<div id="h0_mcol0" class="h0_menu_col">
+		<a id="mhb0" class="h0_button h0b_menu" href="illuminatiSite.html" title="Home">Home</a>
+		<a id="mhb1" class="h0_button h0b_menu" href="aboutPage.html" title="About My Site">About</a>
+		<a id="mhb2" class="h0_button h0b_menu" href="productsPage.html" title="Products">Products</a>
+	</div><div id="h0_mcol1" class="h0_menu_col">
+		<a id="mhb3" class="h0_button h0b_menu" href="dicePage.html" title="Dice">Dice</a>
+		<a id="mhb4" class="h0_button h0b_menu" href="encryptionTestingPage.html" title="Encryption Testing">Encryption</a>
+		<a id="mhb5" class="h0_button h0b_menu" href="notepadPage.html" title="Notepad">Notepad</a>
+	</div><div id="h0_mcol2" class="h0_menu_col">
+		<a id="mhb6" class="h0_button h0b_menu" href="colorPage.html" title="Purple Theme">Purple</a>
+		<a id="mhb7" class="h0_button h0b_menu" href="colorPage2.html" title="2 Color Testing">Color&nbsp;2</a>
+		<a id="mhb8" class="h0_button h0b_menu" href="colorPage3.html" title="3 Color Testing">Color&nbsp;3</a>
+	</div><div id="h0_mcol3" class="h0_menu_col">
+		<a id="mhb9" class="h0_button h0b_menu" href="bookmarksPage.html" title="Bookmarks">Bookmarks</a>
+		<a id="mhb10" class="h0_button h0b_menu" href="musicPage.html" title="Music">My Music</a>
+	</div>
+</div><!/h0_menu>
+</form><!/h0_main>
+
+</div><!/header>
+<!----------------------------------------------------------------------------------------Header ends here-->
+
+<!---- ><iframe src="terminal.html" id="terminal_window"></iframe><!---->
+<div id="terminal_window" style="display:none;">
+	<form id="terminal">
+		<div id="terminal_spacer" onclick="giveTerminalFocus();"></div>
+		<span id="terminal_text">> <input id="terminal_input" type="text" autocomplete="off" style="display:inline;"></span>
+		<input type="submit" onclick="processInput();" style="display:none">
+	</form>
+</div>
+
+
+<div class="mid-section empty_div">
+<div class="slideNewsBox">
+	<div class="slideNews_window">
+		<div class="slideNews_windowSlider">
+			<a class="slideNews_windowItem" href="javascript:void(0);">
+				<img class="slideNews_windowPic" src="images/scape1.jpg">
+				<div class="slideNews_windowText babbleFont backgroundFade">This is the first article</div>
+			</a><a class="slideNews_windowItem" href="articleTemplate.html">
+				<img class="slideNews_windowPic" src="images/scape2.jpg">
+				<div class="slideNews_windowText babbleFont backgroundFade">Article Template</div>
+			</a><a class="slideNews_windowItem" href="javascript:void(0);">
+				<img class="slideNews_windowPic" src="images/scape3.jpg">
+				<div class="slideNews_windowText babbleFont backgroundFade">This is the third article</div>
+			</a><a class="slideNews_windowItem" href="javascript:void(0);">
+				<img class="slideNews_windowPic" src="images/scape4.jpg">
+				<div class="slideNews_windowText babbleFont backgroundFade">This is the fourth article</div>
+			</a><a class="slideNews_windowItem" href="javascript:void(0);">
+				<img class="slideNews_windowPic" src="images/scape5.jpg">
+				<div class="slideNews_windowText babbleFont backgroundFade">This is the fifth article</div>
+			</a><a class="slideNews_windowItem" href="javascript:void(0);">
+				<img class="slideNews_windowPic" src="images/scape6.jpg">
+				<div class="slideNews_windowText babbleFont backgroundFade">This is the sixth article</div>
+			</a>
+		</div>
+	</div>
+	<div class="slideNews_menu">
+		<a class="slideNews_menuItem" href="javascript:showWindow(0,1);">
+			<img class="slideNews_menuPic" src="images/scape1.jpg">
+			<div class="slideNews_menuText font1">This is the first article</div>
+		</a>
+		<a class="slideNews_menuItem" href="javascript:showWindow(0,2);">
+			<img class="slideNews_menuPic" src="images/scape2.jpg">
+			<div class="slideNews_menuText font1">Article Template</div>
+		</a>
+		<a class="slideNews_menuItem" href="javascript:showWindow(0,3);">
+			<img class="slideNews_menuPic" src="images/scape3.jpg">
+			<div class="slideNews_menuText font1">A third article can be put here</div>
+		</a>
+		<a class="slideNews_menuItem" href="javascript:showWindow(0,4);">
+			<img class="slideNews_menuPic" src="images/scape4.jpg">
+			<div class="slideNews_menuText font1">There can be four visible articles at once</div>
+		</a>
+		<a class="slideNews_menuItem" href="javascript:showWindow(0,5);">
+			<img class="slideNews_menuPic" src="images/scape5.jpg">
+			<div class="slideNews_menuText font1">blah blah</div>
+		</a>
+		<a class="slideNews_menuItem" href="javascript:showWindow(0,6);">
+			<img class="slideNews_menuPic" src="images/scape6.jpg">
+			<div class="slideNews_menuText font1">blah blah blah</div>
+		</a>
+	</div>
+	<button onclick="stopTimer()">stahp</button>
+</div>
+</div><!/empty_div-->
+
+
+<div id="footer" class="mid-section">
+<center>
+<a href="home.html" style="color:#666666">Desktop Site</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.cnn.com/about" style="color:#666666">About BabbleSoft</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" style="color:#666666">AdChoices</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.cnn.com/services/advertise/main.html" style="color:#666666">Advertise with us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" style="color:#666666">Careers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" style="color:#666666">Contact BabbleSoft</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.huffingtonpost.com/p/frequently-asked-question.html" style="color:#666666">FAQ</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" style="color:#666666">Help</a><br><br>
+
+By using this site, you agree to have read and accepted our <a href="javascript:void(0);" style="color:#666666">Terms of Use</a>, <a href="javascript:void(0);" style="color:#666666">Cookie Policy</a> and <a href="javascript:void(0);" style="color:#666666">Privacy Policy</a>.<br>
+
+Copyright 1999-2016 by BabbleSoft Inc. All Rights Reserved.
+</center>
+</div><!---->
+</body>
+</html>
+
