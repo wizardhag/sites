@@ -1,0 +1,18 @@
+<!--DOCTYPE html-->
+<html lang="en-US">
+<head>
+	<title id="title">Terminal</title>
+	
+	<link rel="shortcut icon" href="images/eyeCamera.ico">
+	<link rel="stylesheet" type="text/css" href="styles/terminalStyles.css">
+	<script src="scripts/terminalScript.js"></script>
+	<script src="scripts/jquery-1.12.2.min.js"></script>
+</head>
+<body onload="giveTerminalFocus();" style="overflow:hidden">
+<form id="terminal">
+	<div id="terminal_spacer" onclick="giveTerminalFocus();"></div>
+	<span id="terminal_text">> <input id="terminal_input" type="text" autocomplete="off" style="display:inline;"></span>
+	<input type="submit" onclick="processInput();" style="display:none">
+</form>
+</body>
+</html>

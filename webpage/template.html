@@ -1,0 +1,153 @@
+<!--DOCTYPE html-->
+<html lang="en-US">
+<head>
+	<title id="title">Illuminati</title>
+	<link rel="icon" href="images/eyeCamera.ico">
+
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/terminalStyles.css">
+
+	<script src="scripts/headerScript.js"></script>
+	<script src="scripts/jquery-1.12.2.min.js"></script>
+	<!---->
+	<script src="scripts/terminalScript.js"></script>
+	<!---->
+	<script src="scripts/goodScript.js"></script>
+	
+	<script>
+		<!--
+		function onload()
+		{
+			headerListStuff();
+			//showWindow(0,1);
+			//randAd();
+		}
+		/** /
+		var myVar = setInterval(function(){shiftWindow(0);}, 10000);
+		
+		function stopTimer(){
+			clearInterval(myVar);
+		}/**/
+		//-->
+	</script>
+</head>
+    
+<body onload="onload()" onscroll="doTheHeaderScrollThing()" onresize="doTheHeaderResizeThing()">
+		
+
+<!--------------------------------------------------------------------------------------Header starts here-->
+<div id="header">
+
+<!img id="h0_splash_pic" src="images/siteNameWhite.png">
+<form id="header_main"><!Dynamic-scrolling part of header>
+
+<input type="submit" onclick="dontSubmitSearch();" style="display:none;">
+<div id="h0_grayBar"></div>
+<input id="h0_menu_checkbox" type="checkbox" onclick="menuClicked();">
+
+<div id="h0_width"><!Holds header pic and header array>
+	<div id="h0_splash_div" class="font1">ISeeYouFrom.Space</div>
+	<!img id="h0_splash_pic" src="images/siteNameWhite.png">
+	
+	<a id="h0_pic_link" href="illuminatiSite.html" title="Home">
+		<img id="h0_pic" class="h0b_colors" src="images/cameraHead-Header-Full.png">
+	</a>
+	
+	<div id="h0_array">
+		<!a id="h0_pic_space" class="h0_button h0_left"><!/a>
+		<input id="h0_sb_checkbox" type="checkbox" onclick="searchbarClicked();">
+		<div id="h0_sb_div">
+			<input id="h0_sb_input" class="h0_font" type="text" name="searchBox" placeholder="Search Here" autocomplete="off">
+			<label id="h0_sb_button_div" class="h0b_colors" onclick="changeSearchbarFocus();" for="h0_sb_checkbox">
+				<img id="h0_sb_button_img" src="images/searchMagnifyingGlass.png">
+			</label>
+		</div>
+		<a id="hb0" class="h0_selected_color h0_left" href="illuminatiSite.html" title="Home"><!h0_selected_color>
+			<img id="hb0_img" class="h0_button_pic" src="images/cameraHead-Header-Button.png">
+		</a>																		<!77x36>
+		<label id="hb_menu" class="h0_button h0b_colors h0_font h0_right" href="javascript:changeHeaderMenu();" title="Menu" for="h0_menu_checkbox">&#9776;</label>
+		<a id="hb_terminal" class="h0_button h0b_colors h0_font h0_right" href="javascript:changeTerminal();" title="terminal">[>_]</a>
+	</div><!/h0_array>
+
+</div><!/h0_width>
+<div id="h0_menu">
+	<div id="h0_mcol0" class="h0_menu_col">
+		<a id="mhb0" class="h0_button h0b_menu" href="illuminatiSite.html" title="Home">Home</a>
+<!---- ><a id="mhb1" class="h0_button h0b_menu" href="aboutPage.html" title="About My Site">About</a>
+		<a id="mhb7" class="h0_button h0b_menu" href="bookmarksPage.html" title="Bookmarks">Bookmarks</a><!---->
+	</div><div id="h0_mcol1" class="h0_menu_col">
+<!---- ><a id="mhb2" class="h0_button h0b_menu" href="referencesPage.html" title="References">References</a>
+		<a id="mhb3" class="h0_button h0b_menu" href="trajectoryCalculatorPage.html" title="Trajectory Calculator">Trajectory&nbsp;Calculator</a>
+		<a id="mhb9" class="h0_button h0b_menu" href="dicePage.html" title="Dice">Dice</a><!---->
+	</div><div id="h0_mcol2" class="h0_menu_col">
+<!---- ><a id="mhb4" class="h0_button h0b_menu" href="colorPage.html" title="Purple Theme">Purple</a>
+		<a id="mhb5" class="h0_button h0b_menu" href="colorPage2.html" title="2 Color Testing">Color&nbsp;2</a>
+		<a id="mhb6" class="h0_button h0b_menu" href="colorPage3.html" title="3 Color Testing">Color&nbsp;3</a><!---->
+	</div><div id="h0_mcol3" class="h0_menu_col">
+<!---- ><a id="mhb8" class="h0_button h0b_menu" href="musicPage.html" title="Music">My Music</a>
+		<a id="mhb10" class="h0_button h0b_menu" href="encryptionTestingPage.html" title="Encryption Testing">Encryption</a>
+		<a id="mhb11" class="h0_button h0b_menu" href="notepadPage.html" title="Notepad">Notepad</a><!---->
+	</div>
+</div><!/h0_menu>
+</form><!/header_main>
+
+</div><!/header>
+<!----------------------------------------------------------------------------------------Header ends here-->
+
+<!---- ><iframe src="terminal.html" id="terminal_window"></iframe><!---->
+<div id="terminal_window" style="display:none;">
+	<form id="terminal">
+		<div id="terminal_spacer" onclick="giveTerminalFocus();"></div>
+		<span id="terminal_text">> <input id="terminal_input" type="text" autocomplete="off" style="display:inline;"></span>
+		<input type="submit" onclick="processInput();" style="display:none">
+	</form>
+</div>
+
+
+<div id="body_div" class="mid-section">
+	<h1><!>The Illuminati: Controlling Our Society<!><!Website Template: This is The Article's Title<!></h1>
+	<h2>An inside look at the infamously secrative secretive organization will stop at nothing to impart its will upon the world.</h2>
+	<div class="author_row">
+		<div class="author_wrapper font1">
+		<div class="author_picDiv">
+			<img class="author_pic" src="images/professional1.png">
+		</div>
+		<span class="author_text"><b>By Mikhael Paskalev</b><br>7:34 PM EDT, May 3, 2016
+		</span>
+		</div>
+	</div>
+
+	<div class="inText_picDiv_left font1">
+		<img class="inText_pic" src="images/youAreBeingWatched.jpg">
+		<div class="inText_picCaption">This is an example of a caption for this image.</div>
+	</div>
+	
+<p>Most people don't realize how dangerous the illuminati are. The illuminati are puppetmasters controlling our governments and our economies; they've infiltrated and now control almost every aspect of civilian life, and their main goal: <i>WORLD DOMINATION</i>, and ultimately <i>CREATING A NEW WORLD ORDER</i>.</p>
+
+	<center><button type="button" onclick="alert('You are being redirected to google.com.');alert('You have been lied to! Ha! Haha hahaha! In your face! Hahahahaha haha hahahahaha! Hahaha hahah ahahaha hahaha hahaah hahahhadhh ahhdhahhhha hhahaahahhaa hahahah hahhahhahahahl ashfh a ;ld jofp;akerlj wlsk fjfodpa;oei ajlfdsa;df lksdj oaje;lka jckvoifhgelaldf jasdopzoifh apheshkfxi iape a,  hsidl ziugra');">Click Me!</button></center>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<div class="inText_picDiv_right font1">
+		<img class="inText_pic" src="images/youAreBeingWatched.jpg">
+		<div class="inText_picCaption">This is another example of a caption for an image.</div>
+	</div>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in eaM voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+
+</div><!/body_div>
+
+
+<div id="footer" class="mid-section font1">
+<center>
+<a href="home.html" style="color:#666666">Desktop Site</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.cnn.com/about" style="color:#666666">About BabbleSoft</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" style="color:#666666">AdChoices</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.cnn.com/services/advertise/main.html" style="color:#666666">Advertise with us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" style="color:#666666">Careers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" style="color:#666666">Contact BabbleSoft</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.huffingtonpost.com/p/frequently-asked-question.html" style="color:#666666">FAQ</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" style="color:#666666">Help</a><br><br>
+
+By using this site, you agree to have read and accepted our <a href="javascript:void(0);" style="color:#666666">Terms of Use</a>, <a href="javascript:void(0);" style="color:#666666">Cookie Policy</a> and <a href="javascript:void(0);" style="color:#666666">Privacy Policy</a>.<br>
+
+Copyright 1999-2016 by BabbleSoft Inc. All Rights Reserved.
+</center>
+</div><!---->
+</body>
+</html>
+

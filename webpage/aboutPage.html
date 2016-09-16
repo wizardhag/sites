@@ -1,0 +1,147 @@
+<!--DOCTYPE html-->
+<html lang="en-US">
+<head>
+	<title id="title">Illuminati</title>
+	<link rel="icon" href="images/eyeCamera.ico">
+
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/terminalStyles.css">
+
+	<script src="scripts/headerScript.js"></script>
+	<script src="scripts/jquery-1.12.2.min.js"></script>
+	<!---->
+	<script src="scripts/terminalScript.js"></script>
+	<!---->
+	<script src="scripts/goodScript.js"></script>
+	
+	<script>
+		<!--
+		function onload()
+		{
+			headerListStuff();
+			//showWindow(0,1);
+			//randAd();
+		}
+		/** /
+		var myVar = setInterval(function(){shiftWindow(0);}, 10000);
+		
+		function stopTimer(){
+			clearInterval(myVar);
+		}/**/
+		//-->
+	</script>
+
+	<style>
+		h1{
+			font-size:35px;
+			text-align:center;
+			padding:none;
+			letter-spacing:1px;
+		}
+		h4{
+			size:1;
+			text-align:justify;
+		}
+	</style>
+</head>
+    
+<body onload="onload()" onscroll="doTheHeaderScrollThing()" onresize="doTheHeaderResizeThing()">
+		
+
+<!--------------------------------------------------------------------------------------Header starts here-->
+<div id="header">
+
+<img id="h0_splash_pic" src="images/siteNameWhite.png">
+<form id="header_main"><!Dynamic-scrolling part of header>
+
+<input type="submit" onclick="dontSubmitSearch();" style="display:none;">
+<div id="h0_grayBar"></div>
+<input id="h0_menu_checkbox" type="checkbox" onclick="menuClicked();">
+
+<div id="h0_width"><!Holds header pic and header array>
+<!---->
+	<a id="h0_pic_link" href="illuminatiSite.html" title="Home">
+		<img id="h0_pic" class="h0b_colors" src="images/cameraHead-Header-Full.png">
+	</a>
+	
+	<div id="h0_array">
+		<!a id="h0_pic_space" class="h0_button h0_left"><!/a>
+		<input id="h0_sb_checkbox" type="checkbox" onclick="searchbarClicked();">
+		<div id="h0_sb_div">
+			<input id="h0_sb_input" class="h0_font" type="text" name="searchBox" placeholder="Search Here" autocomplete="off">
+			<label id="h0_sb_button_div" class="h0b_colors" onclick="changeSearchbarFocus();" for="h0_sb_checkbox">
+				<img id="h0_sb_button_img" src="images/searchMagnifyingGlass.png">
+			</label>
+		</div>
+		<a id="hb0" class="h0_selected_color h0_left" href="illuminatiSite.html" title="Home"><!h0_selected_color>
+			<img id="hb0_img" class="h0_button_pic" src="images/cameraHead-Header-Button.png">
+		</a>																		<!77x36>
+		<label id="hb_menu" class="h0_button h0b_colors h0_right" href="javascript:changeHeaderMenu();" title="Menu" for="h0_menu_checkbox">&#9776;</label>
+		<a id="hb_terminal" class="h0_button h0b_colors h0_right" href="javascript:changeTerminal();" title="terminal">[&#062;_]</a>
+	</div><!/h0_array>
+
+</div><!/h0_width>
+<div id="h0_menu">
+	<div id="h0_mcol0" class="h0_menu_col">
+		<a id="mhb0" class="h0_button h0b_menu" href="illuminatiSite.html" title="Home">Home</a>
+<!---- ><a id="mhb1" class="h0_button h0b_menu" href="aboutPage.html" title="About My Site">About</a>
+		<a id="mhb7" class="h0_button h0b_menu" href="bookmarksPage.html" title="Bookmarks">Bookmarks</a><!---->
+	</div><div id="h0_mcol1" class="h0_menu_col">
+<!---- ><a id="mhb2" class="h0_button h0b_menu" href="referencesPage.html" title="References">References</a>
+		<a id="mhb3" class="h0_button h0b_menu" href="trajectoryCalculatorPage.html" title="Trajectory Calculator">Trajectory&nbsp;Calculator</a>
+		<a id="mhb9" class="h0_button h0b_menu" href="dicePage.html" title="Dice">Dice</a><!---->
+	</div><div id="h0_mcol2" class="h0_menu_col">
+<!---- ><a id="mhb4" class="h0_button h0b_menu" href="colorPage.html" title="Purple Theme">Purple</a>
+		<a id="mhb5" class="h0_button h0b_menu" href="colorPage2.html" title="2 Color Testing">Color&nbsp;2</a>
+		<a id="mhb6" class="h0_button h0b_menu" href="colorPage3.html" title="3 Color Testing">Color&nbsp;3</a><!---->
+	</div><div id="h0_mcol3" class="h0_menu_col">
+<!---- ><a id="mhb8" class="h0_button h0b_menu" href="musicPage.html" title="Music">My Music</a>
+		<a id="mhb10" class="h0_button h0b_menu" href="encryptionTestingPage.html" title="Encryption Testing">Encryption</a>
+		<a id="mhb11" class="h0_button h0b_menu" href="notepadPage.html" title="Notepad">Notepad</a><!---->
+	</div>
+</div><!/h0_menu>
+</form><!/header_main>
+
+</div><!/header>
+<!----------------------------------------------------------------------------------------Header ends here-->
+
+<!---- ><iframe src="terminal.html" id="terminal_window"></iframe><!---->
+<div id="terminal_window" style="display:none;">
+	<form id="terminal">
+		<div id="terminal_spacer" onclick="giveTerminalFocus();"></div>
+		<span id="terminal_text">> <input id="terminal_input" type="text" autocomplete="off" style="display:inline;"></span>
+		<input type="submit" onclick="processInput();" style="display:none">
+	</form>
+</div>
+
+
+<div id="body_div" class="mid-section">
+		
+	<h1 id="title" class="font1">About My Site</h1>
+			
+	<center class="font1">idk, I just made it because I could I guess, the site doesn't really have a purpose.</center>				
+	<br><br>
+			
+	<center><img src="images/youAreBeingWatched.jpg" style="width:300px;height:175px"></center><br>
+			
+			
+</div><!--End Body Div-->
+		
+
+<!--div id="footer">
+	<center>
+		<a id="bottom_ad" target="_self">
+			<img id="bottom_ad_image">
+		</a>
+		<script>
+		</script>
+	</center>
+</div-->
+</body>
+</html>
+
+
+
+		
+
+
