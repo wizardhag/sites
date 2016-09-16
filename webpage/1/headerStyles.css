@@ -1,0 +1,281 @@
+/**
+ * Written by John Claassen
+ * 
+ * Y are u looking at my stylesheet?
+ */
+
+.h0_font{
+	/**/font-family:Tahoma, Geneva, sans-serif;letter-spacing:.05em;/**/
+	/** /font-family:Arial, Helvetica, sans-serif;letter-spacing:.03em;/**/
+}
+#header-p{
+	position:relative;
+	top:0px;
+	left:0px;
+	margin:none;
+	height:36px;
+	width:100%;
+	background:black;
+	z-index:2;
+	overflow:visible;
+	/** /border:solid green 1px;/**/
+	-webkit-transition:height .25s;-moz-transition:height .25s;-o-transition:height .25s;
+}
+#header_main{
+	position:fixed;
+	top:0px;
+	left:0px;
+	height:36px;
+	width:100%;
+	/**/background:none;/** /#807e86;/**/
+	overflow:visible;
+	/** /border:solid blue 1px;/**/
+	/** /-webkit-transition:height .25s;-moz-transition:height .25s;-o-transition:height .25s;/**/
+}
+#h0_splash_pic{
+	position:absolute;
+	bottom:48px;
+	left:162px;
+	height:70px;
+	z-index:4;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;unselectable="on";
+	-webkit-transition:left .5s;-moz-transition:left .5s;-o-transition:left .5s;
+	/** /border:solid green 1px;/**/
+}
+#h0_grayBar-p{
+	position:absolute;
+	/** /box-shadow:0px 2px 5px #333333;/**/
+	bottom:0px;
+	left:0px;
+	height:36px;
+	width:100%;
+	background:black;
+}
+#h0_width{
+	position:relative;
+	left:0%;
+	width:100%;
+	top:0px;
+	height:100%;/**/
+	/*height:36px;*/
+	overflow:hidden;
+	/** /border:solid blue 1px;/**/
+	/**/-webkit-transition:width .5s, left .5s;-moz-transition:width .5s, left .5s;-o-transition:width .5s, left .5s;/**/
+}
+#h0_pic_link{
+	display:none;/*inline-block;/**/
+	float:left;
+	bottom:0px;
+	height:100%;
+	width:142px;
+	overflow:hidden;
+	/** /border:solid purple 1px;/**/
+	/** /-webkit-transition:width .5s;-moz-transition:width .5s;-o-transition:width .5s;/**/
+}
+#h0_pic{
+	width:100%;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;unselectable="on";
+}
+.h0_button_pic{
+	height:100%;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;unselectable="on";
+}
+.h0_selected_color-p{
+	background-color:white;
+}
+#h0_array{
+	display:inline-block;
+	position:absolute;
+	bottom:0px;
+	width:calc(100% - 142);
+	height:36px;
+	overflow:hidden;
+	padding:none;
+	/** /border:solid black 1px;/**/
+}
+.h0_button-p{
+	display:inline-block;
+	padding:7px 10px;
+	border:none;
+	font-size:18px;
+	text-align:center;
+	/**/font-family:Tahoma, Geneva, sans-serif;letter-spacing:.05em;/**/
+	/** /font-family:Arial, Helvetica, sans-serif;letter-spacing:.03em;/**/
+	text-decoration:none;
+	color:purple;
+	cursor:pointer;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;unselectable="on";
+}
+.h0b_colors-p:link, .h0b_colors-p:visited, .h0b_colors-p{
+	background-color:black;
+}
+.h0b_colors-p:hover{
+	background-color:#515555;
+}
+.h0b_colors-p:active{
+	background-color:white;
+}
+.h0_left{
+	float:left;
+}
+.h0_right{
+	float:right;
+}
+#h0_sb_div{
+	display:inline-block;
+	float:right;
+	height:36px;
+	width:36px;
+	border:hidden;
+	/** /background-color:purple;/**/
+	-webkit-transition:width .5s;-moz-transition:width .5s;-o-transition:width .5s;
+}
+#h0_sb_input{
+	position:relative;
+	display:inline-block;
+	box-sizing:border-box;
+	top:2px;
+	left:2px;
+	height:32px;
+	width:calc(100% - 4px);
+	padding:0px 15px;
+	font-size:18px;
+	background-color:#ffffff;
+	border:none;
+	outline:none;
+	border-radius:16px;
+}
+#h0_sb_button_div{
+	position:relative;
+	display:inline-block;
+	box-sizing:border-box;
+	float:right;
+	top:-32;
+	height:36px;
+	width:36px;
+	border:hidden;
+	border-radius:18px;
+	padding:0px;
+	cursor:pointer;cursor:hand;
+}
+#h0_sb_button_img{
+	position:relative;
+	top:17%;
+	left:17%;
+	height:64%;
+	width:64%;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;unselectable="on";
+}
+#h0_sb_checkbox-p{
+	display:none;
+}
+#h0_sb_checkbox-p:checked + #h0_sb_div{
+	width:300px;
+}
+#h0_sb_checkbox-p:checked + div #h0_sb_button_div,
+#h0_sb_checkbox-p:checked + div #h0_sb_button_div:hover,
+#h0_sb_checkbox-p:checked + div #h0_sb_button_div:active{
+	background-color:white;
+}
+#h0_menu_checkbox{
+	display:none;
+}
+#h0_menu{
+	/**/box-shadow:0px 0px 6px 1px #333333;/**/
+	top:0px;
+	left:0px;
+	width:100%;
+	height:0px;
+	background-color:white;
+	overflow:auto;
+	z-index:3;
+	/** /border:red 1px solid;/**/border:none;/**/
+	-webkit-transition:height .5s;-moz-transition:height .5s;-o-transition:height .5s;
+}
+#h0_menu::-webkit-scrollbar{
+	display:none;
+}
+.h0_menu_col_even, .h0_menu_col_odd{
+	width:100%;
+	display:block;
+	float:left;
+	/** /border:orange 1px solid;/**/
+}
+.h0_menu_button-p{
+	display:block;
+	box-sizing:border-box;
+	height:36px;
+	padding:7px 10px;
+	border:none;
+	font-size:18px;
+	text-align:center;
+	/**/font-family:Tahoma, Geneva, sans-serif;letter-spacing:.05em;/**/
+	/** /font-family:Arial, Helvetica, sans-serif;letter-spacing:.03em;/**/
+	text-decoration:none;
+	color:black;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;unselectable="on";
+}
+a.h0_menu_button-p:link, a.h0_menu_button-p:visited{
+	background-color:#ffffff;
+}
+a.h0_menu_button-p:hover{
+	background-color:#616666;
+}
+a.h0_menu_button-p:active{
+	background-color:black;
+}
+#h0_menu_checkbox-p:checked + #h0_menu{
+	height:calc(10 * 36px);
+}
+
+
+/*When the screen is too small for the search bar*/
+@media screen and (max-width:315px){
+	#h0_sb_checkbox-p:checked + #h0_sb_div{
+		width:100%;
+	}
+}/**/
+@media screen and (min-width:601px){
+	#hb0{
+		display:none;
+	}
+	#header-p{
+		height:126px;
+	}
+	/**/#header_main{/**/
+	/** /#h0_picArray_div{/**/
+		height:126px;
+	}
+	#h0_pic_link{
+		display:inline-block;
+	}
+	.h0_menu_col_even, .h0_menu_col_odd{
+		width:50%;
+	}
+	.h0_menu_col_even{
+		display:inline-block;
+	}
+	.h0_menu_col_odd{
+		display:block;
+	}
+	#h0_menu_checkbox-p:checked + #h0_menu{
+		height:calc(7 * 36px);
+	}
+}/**/
+@media screen and (min-width:1001px){
+	#h0_width{
+		left:13%;
+		width:74%;
+	}
+	#h0_splash_pic{
+		left:calc(13% + 162px);
+	}
+	.h0_menu_col_even, .h0_menu_col_odd{
+		width:25%;
+		display:inline-block;
+	}
+	#h0_menu_checkbox-p:checked + #h0_menu{
+		height:calc(3 * 36px);
+	}
+}/**/
+
