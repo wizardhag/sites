@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Index</title>
+<link rel="icon" href="bulletList.ico">
+<script>
+function invertPage(){
+	if(document.getElementById("it5s")==null){
+		document.head.innerHTML+="<style id='it5s'> </style>";
+	}
+	var s=document.getElementById("it5s");
+
+	if(s.innerHTML!=""){s.innerHTML="";}
+	else{
+		s.innerHTML="*{color:#aaaaaa;}body{background-color:black;}"
+		+"a{color:#888800;}a:visited{color:#996600;}a:active{color:#449900;}";
+	}
+}
+</script>
+</head>
+<body onload="invertPage()">
+<span style="float:right;">[<a href="javascript:invertPage();">Invert Colors</a>]</span>
+<h1>ISeeYouFrom.Space Index:</h1>
+<ul>
+	<li><a href="webpage/illuminatiSite.html">webpage/illuminatiSite.html</a></li>
+	<li><a href="webpage-v2%20(only%20if%20not%20using%20headerPic)/illuminatiSite.html">webpage-v2/illuminatiSite.html</a> [broken right now]</li>
+	<li><a href="babblesoft/home.html">babblesoft/home.html</a></li>
+    <li><a href="triangleMenu/home.html">triangleMenu/home.html</a></li>
+</ul>
+</body>
+</html>
