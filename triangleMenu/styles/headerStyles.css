@@ -1,0 +1,151 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+#h_corner{
+	/*box-sizing:border-box;*/
+	position:fixed;
+	padding:none;
+	top:0px;
+	left:0px;
+	height:0px;
+	width:0px;
+	background:none;
+	border-style:solid;
+	border-color:transparent transparent transparent black;
+	border-width:0px 0px 100px 150px;
+	-webkit-transition:border-width .5s;
+	-moz-transition:border-width .5s;
+	-o-transition:border-width .5s;
+	z-index:5;
+}
+
+#h_corner_button{
+	/*box-sizing:border-box;* /
+	display:inline-block;*/
+	position:fixed;
+	top:2px;
+	left:2px;
+	height:66px;
+	width:66px;
+	background:#6a2ecd;
+	border-radius:33px;
+	cursor:pointer;
+	-webkit-transition:height .5s, width .5s, border-radius .5s, top .5s, left .5s;
+	-moz-transition:height .5s, width .5s, border-radius .5s, top .5s, left .5s;
+	-o-transition:height .5s, width .5s, border-radius .5s, top .5s, left .5s;
+	z-index:6;
+}
+
+#h_checkbox{
+	/**/display:none;/**/
+}
+
+#header{
+	box-sizing:border-box;
+	position:fixed;
+	padding:none;
+	/** /overflow:hidden;/**/
+	top:0px;
+	/**/left:calc(-100% - 307px);/*167 + parallelogram widths*/
+	width:calc(100% + 167px);
+	height:100px;
+	background:#e0e0e0;
+	border-bottom:6px solid black;
+	/**/box-shadow:0 0 4px 2px rgba(0,0,0,0.16),0 0 10px 2px rgba(0,0,0,0.12);/**/
+	-webkit-transition:left .7s, height .5s;
+	-moz-transition:left .7s, height .5s;
+	-o-transition:left .7s, height .5s;
+	z-index:4;
+}
+
+#h_checkbox:checked + #header{
+	left:0%;
+}
+
+.h_parallelogram{
+	display:inline-block;
+	position:absolute;
+	padding:none;
+	top:0px;
+	height: 100%;
+	-webkit-transform: skew(-53deg);
+	-moz-transform: skew(-53deg);
+	-o-transform: skew(-53deg);
+}
+
+#h_parallelogram_1{
+	/*paralelogram_2 - 20*/
+	left:calc(100% - 27px);
+	width:100px;
+	background-color:black;
+}
+
+#h_parallelogram_2{
+	left:calc(100% - 67px);/*height/2 * 4/3*/
+	width: 40px;
+	background-color:#6a2ecd;
+}
+
+#h_m_menu{
+	display:inline-block;
+	float:right;
+	height:100%;
+	width:calc(100% - 67px);
+	background:none;
+	/** /background-color:#ff0000;/**/
+}
+
+#h_s_menu{/*later*/
+}
+
+/*Screen size adjustments*******************************************************/
+
+/*Tablet*/
+@media screen and (min-width:601px){
+	#h_corner{
+		border-width:0px 0px 78px 104px;
+	}
+	
+	#h_corner_button{
+		/** /
+		top:6px;
+		left:6px;
+		height:78px;
+		width:78px;
+		border-radius:39px;
+		/**/
+		top:8px;
+		left:8px;
+		height:60px;
+		width:60px;
+		border-radius:30px;
+		/**/
+	}
+	
+	#header{
+		/** /height:125px;/**/
+	}
+}
+
+/*Desktop*/
+@media screen and (min-width:1001px){
+	#h_corner{
+		border-width:0px 0px 150px 250px;
+	}
+	
+	#h_corner_button{
+		top:10px;
+		left:10px;
+		height:86px;
+		width:86px;
+		border-radius:43px;
+	}
+	
+	#header{
+		/** /height:150px;/**/
+	}
+}
+
+
