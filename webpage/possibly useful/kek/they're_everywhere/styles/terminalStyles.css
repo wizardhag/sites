@@ -1,0 +1,14 @@
+#terminal{
+	position:fixed;
+	bottom:0;
+	right:0;
+	width:600px;
+	height:75%;/** /130px;/**/
+	overflow:auto;
+	padding:0px 4px;
+	font-weight:600;
+	color:green;
+	background-color:black;
+	border:1px white solid;
+	z-index:2;
+}
