@@ -101,12 +101,12 @@ chevron.down-lvl:after, chevron:after{
     top:.55em;
 	left:.05em;
 }
-@media screen and (min-width:601px){
+@media only screen and (min-width:601px){
 	h1{
 		font-size:38px;
 	}
 }
-@media screen and (min-width:1001px){
+@media only screen and (min-width:1001px){
 	h1{
 		font-size:46px;
 	}
@@ -339,7 +339,7 @@ chevron.down-lvl:after, chevron:after{
 	width:300px;
 }
 /*When the screen is too small for the search bar*/
-@media screen and (max-width:315px){
+@media only screen and (max-width:315px){
 	#h0s_checkbox:checked + #h0_searchBar{
 		width:100%;
 	}
@@ -390,7 +390,7 @@ input + #h0_menu{
 	float:left;
 	/** /border:orange 1px solid;/**/
 }
-@media screen and (min-width:601px){
+@media only screen and (min-width:601px){
 	#h0b-0{
 		display:none;
 	}
@@ -411,7 +411,7 @@ input + #h0_menu{
 		height:calc(6 * 36px);
 	}
 }
-@media screen and (min-width:1001px){
+@media only screen and (min-width:1001px){
 	.h0m_col{
 		height:auto;
 		width:25%;
@@ -633,7 +633,7 @@ body{
 	width:100%;
 }
 /*Screen size adjustments*******************************************************/
-@media screen and (min-width:601px){
+@media only screen and (min-width:601px){
 	.inText_picDiv_right{
 		margin:0 0 6px 15px;
 		width:300px;
@@ -643,7 +643,7 @@ body{
 		width:300px;
 	}
 }
-@media screen and (min-width:1001px){
+@media only screen and (min-width:1001px){
 	.wide-section{
 		width:calc(100% - 30px);
 		margin:0 15px 15px;
