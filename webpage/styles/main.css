@@ -336,12 +336,12 @@ chevron.down-lvl:after, chevron:after{
 	display:none;
 }
 #h0s_checkbox:checked + #h0_searchBar{
-	width:300px;
+	width:calc(100% - 80px);
 }
 /*When the screen is too small for the search bar*/
-@media only screen and (max-width:315px){
+@media only screen and (min-width:426px){
 	#h0s_checkbox:checked + #h0_searchBar{
-		width:100%;
+		width:300px
 	}
 }
 #h0m_checkbox{
