@@ -18,7 +18,7 @@ var headerList =//buttons per menu column: [ 3, 3, 3, 3 ]
 [	["About", 			"aboutPage.html",				"About My Site",		1,	0	],
 	["References",		"referencePage.html",			"References",			1,	2	],
 	["Traffic&nbsp;Simulator","trafficSimulator.html",	"Traffic Simulator",	1,	1	],
-	["Trajectory&nbsp;Calculator","trajectoryCalculatorPage.html","Trajectory Calculator",1,1],
+	["Shoot&nbsp;the&nbsp;Monkey","trajectoryCalculatorPage.html","Shoot the Monkey",	1,1],
 	["Index", 			"../index.html",				"Index",				1,	2	],
 	["Purple",			"colorPage.html",				"Purple Theme",			1,	2	],
 //	["Color&nbsp;2",	"colorPage2.html",				"2 Color Testing",		1,	2	],
