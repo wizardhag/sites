@@ -1,6 +1,14 @@
 <!--DOCTYPE html-->
 <html lang="en-US">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<meta name="section" content="homepage">
+	<meta name="lastmod" content="2016-09-17T4:35">
+	<meta name="descriptoin" content="A website I made for fun to learn html, css, and js">
+	<!--meta name="keywords" content="">
+	<!--not done with meta, go to: ogp.me-->
+	
 	<title id="title">Illuminati</title>
 	<link rel="icon" href="images/eyeCamera.ico">
 
@@ -10,17 +18,19 @@
 	<script src="scripts/headerScript.js"></script>
 	<script src="scripts/jquery-1.12.2.min.js"></script>
 	<!---->
-	<script src="scripts/terminalScript.js"></script>
-	<!---->
 	<script src="scripts/goodScript.js"></script>
 	
 	<script>
 		<!--
+		var l=true;
 		function onload()
 		{
-			headerListStuff();
-			//showWindow(0,1);
-			//randAd();
+			if(l){//alert("onloaded");
+				headerListStuff();
+				//showWindow(0,1);
+				//randAd();
+				l=false;
+			}
 		}
 		/** /
 		var myVar = setInterval(function(){shiftWindow(0);}, 10000);
@@ -33,7 +43,6 @@
 </head>
     
 <body onload="onload()" onscroll="doTheHeaderScrollThing()" onresize="doTheHeaderResizeThing()">
-		
 
 <!--------------------------------------------------------------------------------------Header starts here-->
 <div id="header">
@@ -43,7 +52,7 @@
 
 <input type="submit" onclick="dontSubmitSearch();" style="display:none;">
 <div id="h0_grayBar"></div>
-<input id="h0_menu_checkbox" type="checkbox" onclick="menuClicked();">
+<input id="h0m_checkbox" type="checkbox" onclick="menuClicked();">
 
 <div id="h0_width"><!Holds header pic and header array>
 	<div id="h0_splash_div" class="font1">ISeeYouFrom.Space</div>
@@ -55,38 +64,41 @@
 	
 	<div id="h0_array">
 		<!a id="h0_pic_space" class="h0_button h0_left"><!/a>
-		<input id="h0_sb_checkbox" type="checkbox" onclick="searchbarClicked();">
-		<div id="h0_sb_div">
-			<input id="h0_sb_input" class="h0_font" type="text" name="searchBox" placeholder="Search Here" autocomplete="off">
-			<label id="h0_sb_button_div" class="h0b_colors" onclick="changeSearchbarFocus();" for="h0_sb_checkbox">
-				<img id="h0_sb_button_img" src="images/searchMagnifyingGlass.png">
+		<a id="h0b-0" class="h0_selected_color h0_left" href="illuminatiSite.html" title="Home"><!h0_selected_color>
+			<img id="h0b-0-img" class="h0_button_pic" src="images/cameraHead-Header-Button.png"><!77x36>
+		</a>
+		
+		<input id="h0s_checkbox" type="checkbox" onclick="searchbarClicked();">
+		<div id="h0_searchBar">
+			<input id="h0s_input" class="h0_font" type="text" name="searchBox" placeholder="Search Here" autocomplete="off">
+			<label id="h0s_button_div" class="h0b_colors" onclick="changeSearchbarFocus();" for="h0s_checkbox">
+				<img id="h0s_button_img" src="images/searchMagnifyingGlass.png">
 			</label>
 		</div>
-		<a id="hb0" class="h0_selected_color h0_left" href="illuminatiSite.html" title="Home"><!h0_selected_color>
-			<img id="hb0_img" class="h0_button_pic" src="images/cameraHead-Header-Button.png">
-		</a>																		<!77x36>
-		<label id="hb_menu" class="h0_button h0b_colors h0_font h0_right" href="javascript:changeHeaderMenu();" title="Menu" for="h0_menu_checkbox">&#9776;</label>
-		<a id="hb_terminal" class="h0_button h0b_colors h0_font h0_right" href="javascript:changeTerminal();" title="terminal">[>_]</a>
+		
+		<label id="h0b-menu" class="h0_button h0b_colors h0_font h0_right" href="javascript:changeHeaderMenu();" title="Menu" for="h0m_checkbox">&#9776;</label>
+		<a id="h0b-terminal" class="h0_button h0b_colors h0_font h0_right" href="javascript:changeTerminal();" title="terminal">[>_]</a>
 	</div><!/h0_array>
 
 </div><!/h0_width>
+<!---- ><input style="display:none"><!Use this to toggle menu opening styles-->
 <div id="h0_menu">
-	<div id="h0_mcol0" class="h0_menu_col">
-		<a id="mhb0" class="h0_button h0b_menu" href="illuminatiSite.html" title="Home">Home</a>
-<!---- ><a id="mhb1" class="h0_button h0b_menu" href="aboutPage.html" title="About My Site">About</a>
-		<a id="mhb7" class="h0_button h0b_menu" href="bookmarksPage.html" title="Bookmarks">Bookmarks</a><!---->
-	</div><div id="h0_mcol1" class="h0_menu_col">
-<!---- ><a id="mhb2" class="h0_button h0b_menu" href="referencesPage.html" title="References">References</a>
-		<a id="mhb3" class="h0_button h0b_menu" href="trajectoryCalculatorPage.html" title="Trajectory Calculator">Trajectory&nbsp;Calculator</a>
-		<a id="mhb9" class="h0_button h0b_menu" href="dicePage.html" title="Dice">Dice</a><!---->
-	</div><div id="h0_mcol2" class="h0_menu_col">
-<!---- ><a id="mhb4" class="h0_button h0b_menu" href="colorPage.html" title="Purple Theme">Purple</a>
-		<a id="mhb5" class="h0_button h0b_menu" href="colorPage2.html" title="2 Color Testing">Color&nbsp;2</a>
-		<a id="mhb6" class="h0_button h0b_menu" href="colorPage3.html" title="3 Color Testing">Color&nbsp;3</a><!---->
-	</div><div id="h0_mcol3" class="h0_menu_col">
-<!---- ><a id="mhb8" class="h0_button h0b_menu" href="musicPage.html" title="Music">My Music</a>
-		<a id="mhb10" class="h0_button h0b_menu" href="encryptionTestingPage.html" title="Encryption Testing">Encryption</a>
-		<a id="mhb11" class="h0_button h0b_menu" href="notepadPage.html" title="Notepad">Notepad</a><!---->
+	<div id="h0m_col-0" class="h0m_col">
+		<a id="h0mb-0" class="h0_button h0m_button" href="illuminatiSite.html" title="Home">Home</a>
+<!---- ><a id="h0mb-1" class="h0_button h0m_button" href="aboutPage.html" title="About My Site">About</a>
+		<a id="h0mb-7" class="h0_button h0m_button" href="bookmarksPage.html" title="Bookmarks">Bookmarks</a><!---->
+	</div><div id="h0m_col-1" class="h0m_col">
+<!---- ><a id="h0mb-2" class="h0_button h0m_button" href="referencesPage.html" title="References">References</a>
+		<a id="h0mb-3" class="h0_button h0m_button" href="trajectoryCalculatorPage.html" title="Trajectory Calculator">Trajectory&nbsp;Calculator</a>
+		<a id="h0mb-9" class="h0_button h0m_button" href="dicePage.html" title="Dice">Dice</a><!---->
+	</div><div id="h0m_col-2" class="h0m_col">
+<!---- ><a id="h0mb-4" class="h0_button h0m_button" href="colorPage.html" title="Purple Theme">Purple</a>
+		<a id="h0mb-5" class="h0_button h0m_button" href="colorPage2.html" title="2 Color Testing">Color&nbsp;2</a>
+		<a id="h0mb-6" class="h0_button h0m_button" href="colorPage3.html" title="3 Color Testing">Color&nbsp;3</a><!---->
+	</div><div id="h0m_col-3" class="h0m_col">
+<!---- ><a id="h0mb-8" class="h0_button h0m_button" href="musicPage.html" title="Music">My Music</a>
+		<a id="h0mb-10" class="h0_button h0m_button" href="encryptionTestingPage.html" title="Encryption Testing">Encryption</a>
+		<a id="h0mb-11" class="h0_button h0m_button" href="notepadPage.html" title="Notepad">Notepad</a><!---->
 	</div>
 </div><!/h0_menu>
 </form><!/header_main>
