@@ -2,15 +2,6 @@
  * Written by John Claassen
  * 
  */
-.weird-link{
-	display:inline-block;
-	height:60px;
-	width:60px;
-	position:fixed;
-	left:20px;
-	bottom:20px;
-	background-color:#00ff00;
-}
 
 /*General Styling****************************************************************/
 @font-face {
@@ -121,14 +112,6 @@ h2{
 	color:black;
 	background-color:#414444;
 }
-#h0s_checkbox:checked + div #h0s_button_div,
-#h0s_checkbox:checked + div #h0s_button_div:hover,
-#h0s_checkbox:checked + div #h0s_button_div:active{
-	background-color:#414444;
-}
-#h0m_checkbox:checked + div div #hb_menu{
-	background-color:#414444;
-}
 .h0m_button{
 	box-sizing:border-box;
 	float:left;
@@ -172,36 +155,15 @@ h2{
 	/** /border:orange 1px solid;/**/
 }
 @media only screen and (min-width:601px){
-	#h0b-0{
-		display:none;
-	}
-	#header{
-		height:126px;
-	}
-	#header_main{
-		height:126px;
-	}
-	#h0_pic_link{
-		display:inline-block;
-	}
 	.h0m_col{
 		height:calc(3 * 36px);
 		width:50%;
-	}
-	#h0m_checkbox:checked + div + #h0_menu, #h0m_checkbox:checked + div + input + #h0_menu{
-		height:calc(6 * 36px);
 	}
 }
 @media only screen and (min-width:1001px){
 	.h0m_col{
 		height:auto;
 		width:25%;
-	}
-	#h0m_checkbox:checked + div + #h0_menu{
-		height:calc(3 * 36px);
-	}
-	#h0m_checkbox:checked + div + input + #h0_menu{
-		height:auto;
 	}
 }
 /*Body***************************************************************************/
