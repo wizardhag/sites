@@ -14,7 +14,7 @@ body{
 	background:none;
 	border-style:solid;
 	border-color:transparent transparent transparent black;
-	border-width:0px 0px 100px 150px;
+	border-width:0px 0px 78px 104px;
 	-webkit-transition:border-width .5s;
 	-moz-transition:border-width .5s;
 	-o-transition:border-width .5s;
@@ -25,17 +25,25 @@ body{
 	/*box-sizing:border-box;* /
 	display:inline-block;*/
 	position:fixed;
+	/*Removed in switch:* /
 	top:2px;
 	left:2px;
 	height:66px;
 	width:66px;
+	border-radius:33px;/**/
 	background:#6a2ecd;
-	border-radius:33px;
 	cursor:pointer;
 	-webkit-transition:height .5s, width .5s, border-radius .5s, top .5s, left .5s;
 	-moz-transition:height .5s, width .5s, border-radius .5s, top .5s, left .5s;
 	-o-transition:height .5s, width .5s, border-radius .5s, top .5s, left .5s;
 	z-index:6;
+	/*Switched:*/
+	top:8px;
+	left:8px;
+	height:60px;
+	width:60px;
+	border-radius:30px;
+	/**/
 }
 
 #h_checkbox{
@@ -105,7 +113,7 @@ body{
 /*Tablet*/
 @media screen and (min-width:601px){
 	#h_corner{
-		border-width:0px 0px 78px 104px;
+		border-width:0px 0px 100px 150px;
 	}
 	
 	#h_corner_button{
@@ -115,12 +123,13 @@ body{
 		height:78px;
 		width:78px;
 		border-radius:39px;
-		/**/
+		/*This is the actual part:* /
 		top:8px;
 		left:8px;
 		height:60px;
 		width:60px;
 		border-radius:30px;
+		/*This is the switched part:*/
 		/**/
 	}
 	
