@@ -21,7 +21,7 @@ body{
 	background:none;
 	border-style:solid;
 	border-color:transparent transparent transparent black;
-	border-width:0px 0px 80px 112px;
+	border-width:0px 0px 80px 120px;
 	-webkit-transition:border-width .5s;
 	-moz-transition:border-width .5s;
 	-o-transition:border-width .5s;
@@ -112,7 +112,7 @@ body{
 	border-radius:55%;
 }
 #h_corner_button_colors:before{
-	background-color:#110efc;
+	background-color:/**/#110efc;/*/#512da8;/**/
 	right:0px;
 	top:-50%;
 	height:200%;
@@ -222,7 +222,7 @@ body{
 /*Tablet*/
 @media screen and (min-width:601px){
 	#h_corner{
-		border-width:0px 0px 100px 140px;
+		border-width:0px 0px 100px 150px;
 	}
 	
 	#h_corner_button{
@@ -261,10 +261,10 @@ body{
 	}
 }
 
-/*Desktop*/
+/*Desktop* /
 @media screen and (min-width:1001px){
 	#h_corner{
-		border-width:0px 0px 150px 210px;
+		border-width:0px 0px 150px 25px;
 	}
 	
 	#h_corner_button{
