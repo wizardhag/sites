@@ -11,7 +11,7 @@
 	<title id="title">Triangle Site 2</title>
 	<link rel="icon" href="triangleIcon.ico">
 
-	<link rel="stylesheet" type="text/css" href="styles/headerStyles.css">
+	<link id="mainSheet" sheet="1" rel="stylesheet" type="text/css" href="styles/headerStyles2.css">
 	<link rel="stylesheet" type="text/css" href="styles/stolenStyle.css">
 
 	<script src="scripts/jquery-1.12.2.min.js"></script>
@@ -21,6 +21,19 @@
 		function onload()
 		{
 		}
+		function switchStyle(recommended)
+		{
+			var sheet=document.getElementById("mainSheet");				
+			if(recommended==1)
+				sheet.setAttribute("href", "styles/headerStyles.css");
+			else if(recommended==2)
+				sheet.setAttribute("href", "styles/headerStyles2.css");
+			else
+				if(sheet.getAttribute("sheet")=="1")
+					sheet.setAttribute("href", "styles/headerStyles2.css");
+				else
+					sheet.setAttribute("href", "styles/headerStyles.css");
+		}			
 		//-->
 	</script>
 </head>
@@ -35,8 +48,8 @@
 <input id="h_checkbox" type="checkbox" onclick="menuClicked();">
 
 <div id="header">
-	<div id="h_parallelogram_1" class="h_parallelogram h_skew"></div>
-	<div id="h_parallelogram_2" class="h_parallelogram h_skew"></div>
+	<!---- ><div id="h_parallelogram_1" class="h_parallelogram h_skew"></div>
+	<div id="h_parallelogram_2" class="h_parallelogram h_skew"></div><!---->
 	<div id="h_m_menu"><h1> menu here</h1>
 	</div>
 </div><!/header>
@@ -45,7 +58,7 @@
 
 <div id="body_div" class="mid-section">
 	<h1><!The Illuminati: Controlling Our Society<!>Article Template: This is The Article's Title<!></h1>
-	<h2><!An inside look at the infamously secrative secretive organization that will stop at nothing to impart its will upon the world.<!>This is an example subtitle that will briefly summarize the article or add an interesting tidbit about it.<!></h2>
+	<h2><!An inside look at the infamously secrative secretive organization that will stop at nothing to impart its will upon the world.<!>This is an example <button onclick="switchStyle(1);">1</button><button onclick="switchStyle(2)">2</button>subtitle that will briefly summarize the article or add an interesting tidbit about it.<!></h2>
 	<div class="author_row">
 		<div class="author_wrapper font1">
 		<div class="author_picDiv">

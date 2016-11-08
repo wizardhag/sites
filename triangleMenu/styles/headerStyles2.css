@@ -58,6 +58,10 @@ body{
 	/**/display:none;/**/
 }
 
+#h_checkbox:checked + #header{
+	left:00%;
+}
+
 #header{
 	box-sizing:border-box;
 	position:fixed;
@@ -65,19 +69,40 @@ body{
 	/** /overflow:hidden;/**/
 	top:0px;
 	/**/left:calc(-100% - 307px);/*167 + parallelogram widths*/
-	width:calc(100% + 167px);
+	width:100%;
 	height:100px;
 	background:#e0e0e0;
 	border-bottom:6px solid black;
-	/**/box-shadow:0 0 4px 2px rgba(0,0,0,0.16),0 0 10px 2px rgba(0,0,0,0.12);/**/
+	/** /box-shadow:0 0 4px 2px rgba(0,0,0,0.16),0 0 10px 2px rgba(0,0,0,0.12);/**/
 	-webkit-transition:left .7s, height .5s;
 	-moz-transition:left .7s, height .5s;
 	-o-transition:left .7s, height .5s;
 	z-index:4;
 }
 
-#h_checkbox:checked + #header{
-	left:-40%;
+#header:before, #header:after{
+	content:"";
+	box-sizing:border-box;
+	display:inline-block;
+	height:calc(100% + 6px);
+	position:absolute;
+	top:0px;
+	background-color:#00ff00;
+	/**/-webkit-transform: skew(-53deg);
+	-moz-transform: skew(-53deg);
+	-o-transform: skew(-53deg);/**/
+}
+
+#header:after{
+	width:100px;
+	left:calc(100% - 30px);/*100% _ amt*/
+	background-color:black;
+}
+
+#header:before{
+	width:40px;
+	left:calc(100% - 70px);/*100% _ (width + amt)*/
+	background-color:#6a2ecd;
 }
 
 .h_parallelogram{
