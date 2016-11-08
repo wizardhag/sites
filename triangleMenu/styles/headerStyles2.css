@@ -25,7 +25,36 @@ body{
 	-webkit-transition:border-width .5s;
 	-moz-transition:border-width .5s;
 	-o-transition:border-width .5s;
+	z-index:6;
+}
+/** /#e000ff;/**/
+#h_hidden_stripe{
+	/*box-sizing:border-box;*/
+	position:fixed;
+	padding:none;
+	top:0px;
+	left:-60px;
+	margin:0 0 0 20px;
+	height:0px;
+	width:0px;
+	background:none;
+	border-style:solid;
+	border-color:transparent transparent transparent /**/#6a2ecd;/*/#400aff;/**/
+	border-width:0px 0px 100px 140px;
+	-webkit-transition:left .5s;
+	-moz-transition:left .5s;
+	-o-transition:left .5s;
 	z-index:5;
+}
+#h_hidden_stripe:before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:-240px;/*140+widthofstripe:before*/
+	display:inline-block;
+	height:100px;
+	width:100px;
+	background-color:#6a2ecd;
 }
 
 #h_corner_button{
@@ -38,7 +67,7 @@ body{
 	height:66px;
 	width:66px;
 	border-radius:33px;/**/
-	background:#6a2ecd;
+	background:/**/none;/*/#6a2ecd;/**/
 	cursor:pointer;
 	-webkit-transition:height .5s, width .5s, border-radius .5s, top .5s, left .5s;
 	-moz-transition:height .5s, width .5s, border-radius .5s, top .5s, left .5s;
@@ -50,25 +79,86 @@ body{
 	height:60px;
 	width:60px;
 	border-radius:30px;
+	/**/overflow:hidden;
 	/**/
 	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;unselectable="on";
+}
+
+#h_corner_menu_icon{
+	position:absolute;
+	top:0;
+	left:0;
+	height:80%;
+	width:80%;
+	padding:13% 10%;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;unselectable="on";
+}
+
+#h_corner_button_colors{
+	box-sizing:border-box;
+	display:inline-block;
+	position:absolute;
+	height:100%;
+	width:200%;
+	background-color:#6a2ecd;
+}
+#h_corner_button_colors:before, #h_corner_button_colors:after{
+	content:"";
+	display:inline-block;
+	position:absolute;
+	height:100%;
+	width:50%;
+	box-sizing:border-box;
+	border-radius:55%;
+}
+#h_corner_button_colors:before{
+	background-color:#110efc;
+	right:0px;
+	top:-50%;
+	height:200%;
+	width:100%;
+	-webkit-transition:right .4s;
+	-moz-transition:right .4s;
+	-o-transition:right .4s;
+}
+#h_corner_button_colors:after{
+	background-color:#6a2ecd;
+	right:50%;
+	-webkit-transition:right .4s;
+	-moz-transition:right .4s;
+	-o-transition:right .4s;
+}
+#h_checkbox:checked + checkHelp #h_corner_button #h_corner_button_colors:before{
+	right:50%;
+	top:0;
+	height:100%;
+	width:50%;
+}
+#h_checkbox:checked + checkHelp #h_corner_button #h_corner_button_colors:after{
+	right:150%;
+	-webkit-transition:right 0s;
+	-moz-transition:right 0s;
+	-o-transition:right 0s;
 }
 
 #h_checkbox{
 	/**/display:none;/**/
 }
 
-#h_checkbox:checked + checkHelp #h_corner{
-	border-width:0px 0px 100px 140px;
+#h_checkbox:checked + checkHelp #h_hidden_stripe{
+	left:-20px;
 }
 
 #h_checkbox:checked + checkHelp #h_corner_button{
 	top:4px;
 	left:4px;
+	height:60px;
+	width:60px;
+	border-radius:30px;
 }
 
 #h_checkbox:checked + checkHelp #header{
-	left:-40%;
+	left:00%;
 }
 
 #header{
@@ -91,7 +181,6 @@ body{
 
 #header:before, #header:after{
 	content:"";
-	box-sizing:border-box;
 	display:inline-block;
 	height:calc(100% + 6px);
 	position:absolute;
@@ -102,17 +191,15 @@ body{
 	-o-transform: skew(-54deg);/**/
 }
 
-#header:after{
+#header:before{
 	width:140px;
-	left:calc(100% - 70px);/*100% _ amt*/
+	left:calc(100% - 30px);/*100% _ amt*/
 	background-color:black;
 }
 
-#header:before{
-	box-sizing:border-box;
-	border-right:solid 10px #400aff;
+#header:after{
 	width:40px;
-	left:calc(100% - 110px);/*100% _ (width + amt)*/
+	left:calc(100% - 70px);/*100% _ (width + amt)*/
 	background-color:#6a2ecd;
 }
 
@@ -154,13 +241,17 @@ body{
 		/*This is the switched part:*/
 		/**/
 	}
-	
-	#h_checkbox:checked + checkHelp #h_corner{
-		border-width:0px 0px 100px 140px;
+
+	#h_checkbox:checked + checkHelp #h_hidden_stripe{
+		left:0px;
 	}
+	
 	#h_checkbox:checked + checkHelp #h_corner_button{
 		top:4px;
 		left:4px;
+		height:60px;
+		width:60px;
+		border-radius:30px;
 	}
 	
 	#header{
@@ -181,13 +272,17 @@ body{
 		width:86px;
 		border-radius:43px;
 	}
-	
-	#h_checkbox:checked + checkHelp #h_corner{
-		border-width:0px 0px 150px 210px;
+
+	#h_checkbox:checked + checkHelp #h_hidden_stripe{
+		left:80px;
 	}
+	
 	#h_checkbox:checked + checkHelp #h_corner_button{
 		top:10px;
 		left:10px;
+		height:86px;
+		width:86px;
+		border-radius:43px;
 	}
 	
 	#header{
