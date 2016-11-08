@@ -245,7 +245,7 @@ body{
 	}
 
 	#h_checkbox:checked + checkHelp #h_hidden_stripe{
-		left:0px;
+		left:10px;
 	}
 	
 	#h_checkbox:checked + checkHelp #h_corner_button{
