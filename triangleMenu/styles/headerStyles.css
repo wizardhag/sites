@@ -3,6 +3,13 @@ body{
 	padding:0;
 }
 
+
+.h_skew{
+	-webkit-transform: skew(-53deg);
+	-moz-transform: skew(-53deg);
+	-o-transform: skew(-53deg);
+}
+
 #h_corner{
 	/*box-sizing:border-box;*/
 	position:fixed;
@@ -69,7 +76,7 @@ body{
 }
 
 #h_checkbox:checked + #header{
-	left:0%;
+	left:-40%;
 }
 
 .h_parallelogram{
@@ -77,22 +84,20 @@ body{
 	position:absolute;
 	padding:none;
 	top:0px;
-	height: 100%;
-	-webkit-transform: skew(-53deg);
-	-moz-transform: skew(-53deg);
-	-o-transform: skew(-53deg);
 }
 
 #h_parallelogram_1{
 	/*paralelogram_2 - 20*/
 	left:calc(100% - 27px);
 	width:100px;
+	height: calc(100% + 6px);/*accounting for the bottom border*/
 	background-color:black;
 }
 
 #h_parallelogram_2{
-	left:calc(100% - 67px);/*height/2 * 4/3*/
+	left:calc(100% - 63px);/*height/2 * 4/3*/
 	width: 40px;
+	height: 100%;
 	background-color:#6a2ecd;
 }
 
