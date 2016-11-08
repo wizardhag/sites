@@ -158,7 +158,7 @@ body{
 }
 
 #h_checkbox:checked + checkHelp #header{
-	left:00%;
+	left:00px;
 }
 
 #header{
@@ -167,15 +167,15 @@ body{
 	padding:none;
 	/** /overflow:hidden;/**/
 	top:0px;
-	/**/left:calc(-100% - 307px);/*167 + parallelogram widths*/
+	left:calc(-100% - 307px);
 	width:100%;
 	height:100px;
 	background:#e0e0e0;
 	border-bottom:6px solid black;
 	/** /box-shadow:0 0 4px 2px rgba(0,0,0,0.16),0 0 10px 2px rgba(0,0,0,0.12);/**/
-	-webkit-transition:left .6s, height .5s;
-	-moz-transition:left 6s, height .5s;
-	-o-transition:left .6s, height .5s;
+	-webkit-transition:left .6s;
+	-moz-transition:left .6s;
+	-o-transition:left .6s;
 	z-index:4;
 }
 
@@ -186,9 +186,9 @@ body{
 	position:absolute;
 	top:0px;
 	background-color:#00ff00;
-	/**/-webkit-transform: skew(-54deg);
-	-moz-transform: skew(-54deg);
-	-o-transform: skew(-54deg);/**/
+	/**/-webkit-transform: skew(-56deg);
+	-moz-transform: skew(-56deg);
+	-o-transform: skew(-56deg);/**/
 }
 
 #header:before{
@@ -201,7 +201,7 @@ body{
 #header:after{
 	width:40px;
 	height:100%;
-	left:calc(100% - 65px);/*100% _ (width + amt - 5)*/
+	left:calc(100% - 65px);/*100% _ (width + amt _ 5)*/
 	background-color:#6a2ecd;
 }
 
