@@ -74,8 +74,8 @@ body{
 	-o-transition:height .5s, width .5s, border-radius .5s, top .5s, left .5s;
 	z-index:6;
 	/*Switched:*/
-	top:8px;
-	left:8px;
+	/** /top:8px;
+	left:8px;/*/top:4px;left:4px;/**/
 	height:60px;
 	width:60px;
 	border-radius:30px;
@@ -150,8 +150,8 @@ body{
 }
 
 #h_checkbox:checked + checkHelp #h_corner_button{
-	top:4px;
-	left:4px;
+	/** /top:4px;
+	left:4px;/**/
 	height:60px;
 	width:60px;
 	border-radius:30px;
@@ -249,8 +249,8 @@ body{
 	}
 	
 	#h_checkbox:checked + checkHelp #h_corner_button{
-		top:4px;
-		left:4px;
+		/** /top:4px;
+		left:4px;/**/
 		height:60px;
 		width:60px;
 		border-radius:30px;
