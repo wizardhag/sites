@@ -21,7 +21,7 @@ body{
 	background:none;
 	border-style:solid;
 	border-color:transparent transparent transparent black;
-	border-width:0px 0px 80px 119px;
+	border-width:0px 0px 80px 120px;
 	-webkit-transition:border-width .5s;
 	-moz-transition:border-width .5s;
 	-o-transition:border-width .5s;
@@ -40,7 +40,7 @@ body{
 	background:none;
 	border-style:solid;
 	border-color:transparent transparent transparent /**/#6a2ecd;/*/#400aff;/**/
-	border-width:0px 0px 94px 139px;
+	border-width:0px 0px 94px 140px;
 	-webkit-transition:left .5s;
 	-moz-transition:left .5s;
 	-o-transition:left .5s;
