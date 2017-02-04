@@ -191,6 +191,7 @@ body{
 	-o-transform: skew(-56deg);/**/
 }
 
+/*right black triangle*/
 #header:before{
 	width:140px;
 	height:calc(100% + 6px);
@@ -198,10 +199,11 @@ body{
 	background-color:black;
 }
 
+/*right purple polygon*/
 #header:after{
 	width:40px;
 	height:100%;
-	left:calc(100% - 65px);/*100% _ (width + amt _ 5)*/
+	left:calc(100% - 64px);/*100% _ (width + amt _ 5)*/
 	background-color:#6a2ecd;
 }
 
