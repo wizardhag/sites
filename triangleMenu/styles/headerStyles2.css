@@ -75,7 +75,7 @@ body{
 	z-index:6;
 	/*Switched:*/
 	/** /top:8px;
-	left:8px;/*/top:2px;left:2px;/**/
+	left:8px;/*/top:5px;left:5px;/**/
 	height:60px;
 	width:60px;
 	border-radius:30px;
@@ -226,8 +226,8 @@ body{
 	}
 	
 	#h_corner_button{
-		top:2px;
-		left:2px;
+		top:5px;
+		left:5px;
 		/** /
 		top:6px;
 		left:6px;
