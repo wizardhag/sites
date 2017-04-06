@@ -11,7 +11,7 @@
 	<title id="title">Triangle Site</title>
 	<link rel="icon" href="triangleIcon.ico">
 
-	<link id="mainSheet" rel="stylesheet" type="text/css" href="styles/headerStyles.css">
+	<link id="mainSheet" rel="stylesheet" type="text/css" href="styles/headerStyles2.css">
 	<link rel="stylesheet" type="text/css" href="styles/stolenStyle.css">
 
 	<script src="scripts/jquery-1.12.2.min.js"></script>
@@ -26,11 +26,10 @@
 					&& document.getElementById("h_m_checkbox").checked){
 				document.getElementById("h_checkbox").checked=true;
 				document.getElementById("h_m_checkbox").checked=false;
-				window.setTimeout(unCheck,300);
+				window.setTimeout(function(){
+					document.getElementById("h_checkbox").checked=false;
+				},300);
 			}
-		}
-		function unCheck(){
-			document.getElementById("h_checkbox").checked=false;
 		}
 		//-->
 	</script>

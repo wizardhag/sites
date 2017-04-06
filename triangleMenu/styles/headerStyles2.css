@@ -38,9 +38,9 @@ body{
 	border-style:solid;
 	border-color:transparent transparent transparent #6a2ecd;
 	border-width:0px 0px 94px 140px;
-	-webkit-transition:border-height .5s, border-width .5s, left .5s;
-	-moz-transition:border-height .5s, border-width .5s, left .5s;
-	-o-transition:border-height .5s, border-width .5s, left .5s;
+	-webkit-transition:border-height .3s, border-width .3s, left .3s;
+	-moz-transition:border-height .3s, border-width .3s, left .3s;
+	-o-transition:border-height .3s, border-width .3s, left .3s;
 	z-index:5;
 }
 #h_hidden_stripe:before{
@@ -334,15 +334,13 @@ body{
 		height:200px;
 	}
 
-	#h_checkbox:checked + checkHelp checkhelp #h_hidden_stripe{
-		left:10px;
-	}
-	
-	/**/
-	#h_m_dropdown_checkbox:checked + checkHelp #h_hidden_stripe{
-		border-width:0px 0px 113px 170px;
+	#h_checkbox:checked + checkHelp checkHelp #h_hidden_stripe{
 		left:-20px;
-	/**/
+	}
+
+	checkHelp checkHelp #h_hidden_stripe{
+		border-width:0px 0px 113px 170px;
+	}
 }
 
 /*Desktop* /

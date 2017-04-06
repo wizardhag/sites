@@ -1,0 +1,38 @@
+Current Colors:
+black
+purple: #6a2ecd
+blue: #110efc
+light gray: #e0e0e0
+(or white?)
+
+Dark purple:
+#3a015c
+
+Less dark but duller purple:
+#512da8
+
+Dark purple/red:
+#4f0147
+
+Lighter, more reddish purple:
+#9338a9
+
+Lighter/brighter purple (blueish, ><reddish):
+#8f28ff
+
+Dark blue:
+#000099
+
+
+
+#3a015c
+#512da8
+#6a2ecd
+#8f28ff
+
+#4f0147
+#9338a9
+#e000ff
+
+#000099
+#110efc
