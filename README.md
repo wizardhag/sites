@@ -5,6 +5,7 @@ Some basic websites I work on for fun in my free time. Take a look through if yo
  3. This site was made in desktop chrome. I have recently started testing in mobile and firefox to make sure it works there too, but that is definitely still a work in progress.  
 
 ##Layout
+
 There are three parts to the site:
 * **illuminatiSite**: My first attempt at a website, it's only purpose was to be a place for me to experiment with different visual styles. After a while, I began putting other useful tools and small web-based projects on this site as well, so it actually has some interesting extras to explore. It's files are very messy, and I often worked on the homepage and underlying javascript/css without updating the other pages once I was done, so it is very likely that many pages will have broken headers.
 * **babblesoft**: An attempt of mine to use the framework of illuminatiSite to create a website for a fake technology site called "Babblesoft." It's just an adapted version of the homepage of illuminatiSite. Looking back at it now I wonder how I chose such a hideous color scheme. (Those yellows don't work for me at all)
